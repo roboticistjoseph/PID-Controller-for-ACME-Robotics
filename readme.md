@@ -1,4 +1,37 @@
-# C++ Boilerplate
+# Test-Driven Development using Pair-programming for PID Control Assignment
+
+As part of Test-Driven Development exercise, a C++ implementation of a PID controller has been developed for a new mobile robot product development.
+This work has been completed as a group using Pair Programming.
+The exercise includes:
+1. Building a C++ project using Cmake.
+2. Creating required Class file for PID controller.
+3. Developing Unit Test cases.
+4. Performing Code Coverage.
+5. Running 'cpplint' and 'cppcheck' to check for coding style and detect bugs.
+
+## Authors:
+ Name: Joseph Pranadeer Reddy Katakam 
+ UID: 117517958
+
+ Name: Adithya Gaurav Singh 
+ UID: 117505047
+
+
+## Pair Programming
+ ### PART A: 
+ - **Driver** : Joseph Pranadeer Reddy Katakam 
+ - **Navigator** : Adithya Gaurav Singh
+
+ ### PART B: 
+ - **Driver** : Adithya Gaurav Singh 
+ - **Navigator** : Joseph Pranadeer Reddy Katakam
+
+
+## UML Class Diagram
+ !["Class Diagram"](./ClassDiagram.png)
+
+----
+## C++ Boilerplate
 [![Build Status](https://travis-ci.org/dpiet/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/dpiet/cpp-boilerplate)
 [![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
 ---
