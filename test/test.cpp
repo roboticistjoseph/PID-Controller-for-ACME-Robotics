@@ -14,16 +14,16 @@
 #include <cmath>
 #include <gtest/gtest.h>
 #include <math.h>
-#include "PidController.hpp"
+#include "../include/PidController.hpp"
 
 // Test case for known input, known output
 TEST(compute, test_case_1) {
   PidController controller_object;
-  EXPECT_NEAR(controller_object.compute(5.00,3.00), 2.0, 0.0001);
+  EXPECT_NEAR(controller_object.compute(5.00, 3.00), 2.0, 0.0001);
 }
 
 // Test case for check for infinity
 TEST(compute, test_case_2) {
   PidController controller_object(1, 0, 0, 0);
-  EXPECT_EQ(std::isnan(controller_object.compute(5.00,3.00)), true);
+  EXPECT_EQ(std::isnan(controller_object.compute(5.00, 3.00)), true);
 }

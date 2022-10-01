@@ -18,7 +18,7 @@
  * 
  */
 class PidController {
-    private:
+ private:
         /**
          * @brief Proportional Gain
          * 
@@ -42,8 +42,8 @@ class PidController {
          * 
          */
         double d_t;
-    
-    public:
+
+ public:
         /**
         * @brief Default Constructor for Pid Controller Class
         * 
@@ -58,8 +58,9 @@ class PidController {
          * @param derivative_constant 
          * @param time_interval 
          */
-        PidController(double proportional_constant, double integration_constant, double derivative_constant, double time_interval);
-        
+        PidController(double proportional_constant, double integration_constant,
+        double derivative_constant, double time_interval);
+
         /**
          * @brief Compute PID controller output
          * 
@@ -74,5 +75,4 @@ class PidController {
          * 
          */
         ~PidController();
-
 };

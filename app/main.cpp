@@ -12,10 +12,9 @@
 
 #pragma once
 #include <iostream>
-#include "PidController.hpp"
+#include "../include/PidController.hpp"
 
-int main()
-{
+int main() {
     std::cout << "Enter the Desired Velocity: ";
 
     // Reading the user input for Target Velocity
@@ -29,7 +28,8 @@ int main()
     double current_velocity = 100;
 
     // Display the computed PID Class output
-    std::cout << std::endl << "Computed PID Controller Output: " << controller_object.compute(target_velocity, current_velocity);
+    std::cout << std::endl << "Computed PID Controller Output: "
+    << controller_object.compute(target_velocity, current_velocity);
 
     return 0;
 }

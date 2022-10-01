@@ -12,7 +12,7 @@
 
 #pragma once
 #include <iostream>
-#include "PidController.hpp"
+#include "../include/PidController.hpp"
 
 PidController::PidController() {
             k_p = 1;
@@ -21,7 +21,9 @@ PidController::PidController() {
             d_t = 0.1;
         }
 
-PidController::PidController(double proportional_constant, double integration_constant, double derivative_constant, double time_interval) {
+PidController::PidController(double proportional_constant,
+    double integration_constant, double derivative_constant,
+    double time_interval) {
             k_p = proportional_constant;
             k_i = integration_constant;
             k_d = derivative_constant;
@@ -33,5 +35,4 @@ double PidController::compute(double target_velocity, double current_velocity) {
         }
 
 PidController::~PidController() {
-
 }
