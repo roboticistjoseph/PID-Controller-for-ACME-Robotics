@@ -48,13 +48,13 @@ class PidController {
          * 
          */
         double currError;
-        
+
         /**
          * @brief Stores the error at the previous time step
          * 
          */
         double prevError;
-        
+
         /**
          * @brief Stores the accumulation of error over time
          * 

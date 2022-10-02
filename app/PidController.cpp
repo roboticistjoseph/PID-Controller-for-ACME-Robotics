@@ -37,15 +37,13 @@ PidController::PidController(double proportional_constant,
         }
 
 double PidController::compute(double target_velocity, double current_velocity) {
-
     currError = target_velocity - current_velocity;
     integralError += currError * d_t;
     static double currOutput;
-    currOutput = k_p*currError + k_i*integralError + k_d  * (currError - prevError) / d_t;
+    currOutput = k_p*currError + k_i*integralError + k_d
+                    * (currError - prevError) / d_t;
     integralError += currError * d_t;
     return currOutput;
-
-            
         }
 
 PidController::~PidController() {
