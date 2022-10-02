@@ -23,25 +23,43 @@ class PidController {
          * @brief Proportional Gain
          * 
          */
-        double k_p;
+        double k_p_;
 
         /**
          * @brief Integral Gain
          * 
          */
-        double k_i;
+        double k_i_;
 
         /**
          * @brief Derivative Gain
          * 
          */
-        double k_d;
+        double k_d_;
 
         /**
          * @brief Time Interval
          * 
          */
-        double d_t;
+        double d_t_;
+
+        /**
+         * @brief Stores the current error
+         * 
+         */
+        double curr_error_;
+
+        /**
+         * @brief Stores the error at the previous time step
+         * 
+         */
+        double prev_error_;
+
+        /**
+         * @brief Stores the accumulation of error over time
+         * 
+         */
+        double integral_error_;
 
  public:
         /**

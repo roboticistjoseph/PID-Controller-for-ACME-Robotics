@@ -23,17 +23,16 @@ The exercise includes:
  - **Navigator** : Adithya Gaurav Singh
 
  ### PART B: 
- - **Driver** : Adithya Gaurav Singh 
- - **Navigator** : Joseph Pranadeer Reddy Katakam
+ - **Driver** : Sparsh Jaiswal (UID - 117433968)
+ - **Navigator** : Akash Ravindra (UID - 117422085)
 
 
 ## UML Class Diagram
- !["Class Diagram"](./ClassDiagram.png)
+ !["Class Diagram"](./Class_Diagrams/ClassDiagram_V2.jpeg)
 
 ----
 ## C++ Boilerplate
-[![Build Status](https://travis-ci.org/dpiet/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/dpiet/cpp-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
+
 ---
 
 ## Overview
