@@ -15,34 +15,34 @@
 #include "../include/PidController.hpp"
 
 PidController::PidController() {
-            k_p = 1;
-            k_i = 0;
-            k_d = 0;
-            d_t = 0.1;
-            currError = 0;
-            prevError = 0;
-            integralError = 0;
+            k_p_ = 1;
+            k_i_ = 0;
+            k_d_ = 0;
+            d_t_ = 0.1;
+            curr_error_ = 0;
+            prev_error_ = 0;
+            integral_error_ = 0;
         }
 
 PidController::PidController(double proportional_constant,
     double integration_constant, double derivative_constant,
     double time_interval) {
-            k_p = proportional_constant;
-            k_i = integration_constant;
-            k_d = derivative_constant;
-            d_t = time_interval;
-            currError = 0;
-            prevError = 0;
-            integralError = 0;
+            k_p_ = proportional_constant;
+            k_i_ = integration_constant;
+            k_d_ = derivative_constant;
+            d_t_ = time_interval;
+            curr_error_ = 0;
+            prev_error_ = 0;
+            integral_error_ = 0;
         }
 
 double PidController::compute(double target_velocity, double current_velocity) {
-    currError = target_velocity - current_velocity;
-    integralError += currError * d_t;
+    current_velocity = target_velocity - current_velocity;
+    integral_error_ += current_velocity * d_t_;
     static double currOutput;
-    currOutput = k_p*currError + k_i*integralError + k_d
-                    * (currError - prevError) / d_t;
-    integralError += currError * d_t;
+    currOutput = k_p_*current_velocity + k_i_*integral_error_ + k_d_
+                    * (current_velocity - prev_error_) / d_t_;
+    integral_error_ += curr_error_ * d_t_;
     return currOutput;
         }
 
