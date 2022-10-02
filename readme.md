@@ -23,8 +23,8 @@ The exercise includes:
  - **Navigator** : Adithya Gaurav Singh
 
  ### PART B: 
- - **Driver** : Adithya Gaurav Singh 
- - **Navigator** : Joseph Pranadeer Reddy Katakam
+ - **Driver** : Sparsh Jaiswal (UID - 117433968)
+ - **Navigator** : Akash Ravindra (UID - 117422085)
 
 
 ## UML Class Diagram
