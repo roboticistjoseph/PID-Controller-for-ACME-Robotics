@@ -43,6 +43,24 @@ class PidController {
          */
         double d_t;
 
+        /**
+         * @brief Stores the current error
+         * 
+         */
+        double currError;
+        
+        /**
+         * @brief Stores the error at the previous time step
+         * 
+         */
+        double prevError;
+        
+        /**
+         * @brief Stores the accumulation of error over time
+         * 
+         */
+        double integralError;
+
  public:
         /**
         * @brief Default Constructor for Pid Controller Class
